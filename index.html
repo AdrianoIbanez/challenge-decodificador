@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Decodificador de textos</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="shortcut icon" href="imagens/garotonote.png" type="image/x-icon">
+</head>
+<body>
+
+    <main class="main-container">
+        <header class="cabecalho">
+            <img src="imagens/garotonote.png" alt="Lgo do garoto com o notebook">
+            <h1>Codificando e Decodificando </h1>      
+        </header>
+
+    <div class="container-input">
+        <div class="input">
+            <textarea id="input-texto" placeholder="Digite seu texto aqui"></textarea>
+            <p>Apenas letras minúsculas e sem acento!</p>
+        </div>
+
+        <div id="output">
+            <img src="imagens/download.png" alt="Imagem download">
+            <h2>Nenhuma mensagem encontrada!</h2>
+            <span>Digite um texto para criptografar ou descriptografar.</span>
+        </div>
+    </div>
+
+    <div class="button">
+        <div class="container-button">
+            <button onclick="criptografar()" id="criptografar-btn" class="button-criptografar">Criptografar</button>
+            <button onclick="descriptografar()" id="descriptografar-btn" class="button-descriptografar">Descriptografar</button>
+        </div>
+    </div>
+    </main>
+    
+    <footer class="rodape">
+        <div class="icones">
+            Github
+            <a href="https://github.com/AdrianoIbanez"><ion-icon name="logo-github"></ion-icon></a> 
+        </div>
+        <h3>Desenvolvido por Adriano Ibanez</h3>
+    </footer>
+    
+    
+    <script src="interact/app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
