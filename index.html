@@ -3,37 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Decodificador de textos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="estilo/style.css">
     <link rel="shortcut icon" href="imagens/garotonote.png" type="image/x-icon">
+    <title> Decodificador de textos</title>
 </head>
 <body>
 
-    <main class="main-container">
-        <header class="cabecalho">
-            <img src="imagens/garotonote.png" alt="Lgo do garoto com o notebook">
-            <h1>Codificando e Decodificando </h1>      
-        </header>
+    <header>
+        <img class="garoto-note" src="imagens/garotonote.png" alt="Logo do garoto com o notebook">           
+    </header>
 
-    <div class="container-input">
-        <div class="input">
-            <textarea id="input-texto" placeholder="Digite seu texto aqui"></textarea>
-            <p>Apenas letras minúsculas e sem acento!</p>
-        </div>
+    <main class= apresentacao>
+        <section>
+            <textarea class="text-area" cols="41" rows="4" placeholder="Digite seu texto"></textarea>
+            
+            <div class="informacao">
+                <h6>Apenas letras minúsculas e sem acento.</h6>
+            </div>
 
-        <div id="output">
-            <img src="imagens/download.png" alt="Imagem download">
-            <h2>Nenhuma mensagem encontrada!</h2>
-            <span>Digite um texto para criptografar ou descriptografar.</span>
-        </div>
-    </div>
+            <div class="botoes">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Criptografar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Descriptografar</button>
+            </div>
+        </section>
 
-    <div class="button">
-        <div class="container-button">
-            <button onclick="criptografar()" id="criptografar-btn" class="button-criptografar">Criptografar</button>
-            <button onclick="descriptografar()" id="descriptografar-btn" class="button-descriptografar">Descriptografar</button>
-        </div>
-    </div>
+        <section>
+            <textarea id="outputText" class="mensagem" cols="20" rows="10"></textarea>
+            <button class="btn-copiar" onclick="copiar()">Copiar</button>
+        </section>
+    
     </main>
     
     <footer class="rodape">
@@ -45,7 +45,7 @@
     </footer>
     
     
-    <script src="interact/app.js"></script>
+    <script src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

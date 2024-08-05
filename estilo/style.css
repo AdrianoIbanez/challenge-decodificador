@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+*{
+    background: var(--corprimaria);
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 150%;
+    
+}
 
 :root{
     --corprimaria: #e4f4fd; 
@@ -9,160 +16,142 @@
     
 }
 
-body{
-    background: var(--corprimaria);
+.garoto-note{
+    margin-left: 10px;
+    padding-top: 10px;
+    width: 5%;
 }
 
-*{
-    margin: 0;
+.apresentacao{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
     padding: 0;
-    font-family: 'Ubuntu', sans-serif;
+    gap: 82px ;
+    width: 50%;
 }
 
-.cabecalho{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2%;
-}
-
-.cabecalho h1{
-   color: var(--corsecundaria)
-}
-
-.cabecalho img{
-    max-width: 70px;
-    max-height: 70px;
-    width: auto;
-    height: auto;
-}
-
-.container-input{
-    display: flex;
-    justify-content: space-between;
-    padding: 2% 0 0 4%;
-}
-
-.container-input .input{
-    width: 400px;
-    height: 330px;
-}
-
-#input-texto{
-    width: 345px;
-    height: 330px;
-    font-size: 15px;
-    color: var(--cortexto);
-    background: transparent;
-    box-shadow: none;
+.text-area{
     border: none;
-    outline: 0;
-    padding: 10px;
+    color: var(--cortexto);
+    margin-top: 90px;
     text-transform: lowercase;
 }
 
-#output{
-    display: flex;
-    flex-direction: column;
+::placeholder {color: var(--cortexto);}
+    .text-area:focus {
+        outline: none;
+    }
+
+.mensagem {
+    background: var(--corprimaria);
+    background-image: url(/imagens/download.png);
+    background-repeat: no-repeat;
     border: none;
-    border-radius: 15px;
-    width: 350px; 
-    height: 400px;
-    margin-right: 3%;
-}
-
-#output h2{
-    text-align: center;
-    font-size: 25px;
-    color: var(--cortexto);
-}
-
-#output span{
-    font-size: 16px;
-    text-align: center;
-}
-
-#output img{
-    max-width: 300px;
-    width: auto;
-    height: auto;
-    margin-top: 2%;
-    margin-left: 2%;
-    margin-right: 2%;
-}
-
-.container-button button{
-    border: 2px solid var(--corsecundaria);
-    border-radius: 20px;
-    text-decoration: none;
+    border-radius: 24px;
     color: var(--corsecundaria);
-    width: 150px;
-    height: 50px;
-    margin-left: 4%;
-    cursor: pointer;   
+    margin-left: 98px;
+    margin-top: 20px;
+    position: fixed;
+}    
+.mensagem:focus {
+    outline: none;
 }
 
-.button-copiar{
-    border: 2px solid var(--corsecundaria);
-    border-radius: 20px;
-    text-decoration: none;
-    color: var(--cortexto);
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 700;  
-    background-color: var(--corprimaria);
-    width: 150px;
-    height: 50px;
-    margin-bottom: 10%;
-    margin-left: 30%;
+.hidden {
+    background: none;
+}
+
+.botoes {
+    display: flex;
+    margin-top: 18px;    
+}
+
+.btn-encriptar {
+    background-color: var(--corquartenaria);
+    border: 1px solid var(--corsecundaria);
+    border-radius: 24px;
+    color: var(--corsecundaria);
     cursor: pointer;
+    height: 67px;
+    width: 328px;
+    font-size: 1rem;
+}
+
+.btn-desencriptar {
+    background-color: var(--corsecundaria);
+    border: 1px solid var(--corprimaria);
+    border-radius: 24px;
+    color: var(--corprimaria);
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+    font-size: 1rem;
+}
+
+.btn-copiar {
+    border: 1px solid var(--corsecundaria);
+    border-radius: 24px;
+    color: var(--corsecundaria);
+    cursor: pointer;
+    height: 67px;
+    margin-left: 100px;
+    margin-top: 402px;
+    position: absolute;
+    width: 328px;
+    font-size: 1rem;
+}
+
+.informacao h6 {
+    Color: var(--corsecundaria);
+    font-size: 1rem; 
 }
 
 .rodape{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2%;
+    text-align: center;
+    padding: 24px;
     margin-top: 50px;
-    background: var(--corquartenaria);
+    background: var(--corprimaria);
     color: var(--corsecundaria);
 }
 
+.icones {
+    font-size: 1rem;
+}
+
 .rodape h3{
-    font-size: 16px;
+    font-size: 0.6rem;
 }
 
 .icons ion-icon{
     width: 25px;
     height: 25px;
-    color: var(--cortexto);
+    Color: var(--cortexto);
+    width: 50%;
 }
 
 .icons ion-icon:hover{
     color: var(--corprimaria);
 }
 
-@media (max-width: 1200px) {
-    .cabecalho h1 {
-        font-size: 1.5rem;
-    }
 
-    .container-input {
+/* Estilos para tablets */
+/*@media (min-width: 768px) and (max-width: 1384px) {
+    main {
         flex-direction: column;
+        align-items: center;
     }
+}
 
-    .input, #output {
-        width: 100%;
-    }
-
-    #input-texto {
-        font-size: 18px;
-    }
-
-    .container-button {
-        justify-content: center; 
-    }
-
-    #output img{
-        opacity: 0%;
-    }
+/* Estilos para smartphones */
+/*@media (max-width: 767px) {
+    .apresentacao {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }  
 }
