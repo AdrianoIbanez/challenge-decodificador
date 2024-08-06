@@ -12,7 +12,8 @@ O desafio foi criar uma página onde possamos criptografar e descriptografar uma
 Para criptografar um texto bastar escrevê-lo no campo "Digite seu texto" e depois clicar no botão "Criptografar".
 O texto criptografado aparecerá junto com um botão "Copiar" ao lado direiro da página onde havia a imagem de um garoto.
 
-![projeto 2](https://github.com/user-attachments/assets/ba7bd5d1-abd2-40c0-ad44-26f824652a4a)
+![projeto 4](https://github.com/user-attachments/assets/c55c137b-b188-4d4b-bcf1-1e0f4e1c6ecc)
+
 
 Para descriptografar basta copiar o texto criptogrado clicando no botão "Copiar" e colando no campo onde digitou o texto original
 depois é so clicar no botão "Descriptografar" e o texto original irá aparecer ao lado direito da página.
